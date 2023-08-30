@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Search</title>
+</head>
+<body>
+  <h1>Pokemon Search</h1>
+  <form id="pokemonForm">
+    <label for="pokemon_name">Enter Pokemon Name:</label>
+    <input type="text" id="pokemon_name" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="pokemonData" style="display: none;">
+    <h2>Pokemon Data:</h2>
+    <p>Name: <span id="name"></span></p>
+    <p>Ability: <span id="ability"></span></p>
+    <p>HP: <span id="hp"></span></p>
+    <p>Attack: <span id="attack"></span></p>
+    <p>Defense: <span id="defense"></span></p>
+    <img id="sprite" alt="Pokemon Sprite">
+  </div>
+
+  <script src="pokedexapi.js"></script>
+</body>
+</html>
